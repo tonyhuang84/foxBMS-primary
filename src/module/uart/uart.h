@@ -54,6 +54,7 @@
 #error BUILD_MODULE_DEBUGPRINTF could only be used when UART module (BUILD_MODULE_ENABLE_UART) is activated
 #endif
     #define DEBUG_PRINTF(x)             UART_vWrite(x)
+    #define DEBUG_PRINTF_EX(x)
 #else
     #define DEBUG_PRINTF(x)             /* keep macro empty */
 #endif
