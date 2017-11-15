@@ -1,6 +1,6 @@
 /**
  *
- * @copyright &copy; 2010 - 2016, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.
+ * @copyright &copy; 2010 - 2017, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved.
  *
  * BSD 3-Clause License
  * Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -42,6 +42,15 @@
 
 
 /*================== Macros and Definitions ===============================*/
+/*fox
+ * If set to 1 LTC driver is configured to use foxBMS slave boards version 1.x
+ * If set to 2 LTC driver is configured to use foxBMS slave boards version 2.x
+ * @var      Select slave version
+ * @group    LTC
+ */
+#define SLAVE_BOARD_VERSION 2
+
+
 /*fox
  * If set to TRUE, PEC errors do not lead to an error state
  * If set to FALSE, further error handling is needed (currently not implemented)
